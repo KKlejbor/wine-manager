@@ -1641,7 +1641,7 @@ DEFAULT_CFG = {
     "extra_prefix_dirs": [],                       # Additional prefix search directories
     "prefix_favorites": {}                         # Prefix -> favorite apps mapping
 }
-
+    """
 def load_cfg() -> dict:
     """
     Load application configuration from file.
@@ -1671,11 +1671,12 @@ def save_cfg(cfg: dict):
     
     Args:
         cfg: Configuration dictionary to save
+    """"
 
-        """Copy all visible logs to clipboard."""
-        clipboard = QApplication.clipboard()
-        clipboard.setText(self.logs_text.toPlainText())
-        QMessageBox.information(self, "📋 Copied", "Logs copied to clipboard!")
+    """Copy all visible logs to clipboard."""
+    clipboard = QApplication.clipboard()
+    clipboard.setText(self.logs_text.toPlainText())
+    QMessageBox.information(self, "📋 Copied", "Logs copied to clipboard!")
     
     def export_logs(self):
         """Export logs to a file."""

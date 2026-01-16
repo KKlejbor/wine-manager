@@ -1671,7 +1671,7 @@ def save_cfg(cfg: dict):
     
     Args:
         cfg: Configuration dictionary to save
-    """"
+    """
 
     """Copy all visible logs to clipboard."""
     clipboard = QApplication.clipboard()
